@@ -18,5 +18,75 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter j7eltexx,$(TARGET_DEVICE)),)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := IPsecService
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/app/IPsecService.apk/IPsecService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ImsSettings
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/app/ImsSettings/ImsSettings.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ImsTelephonyService
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/priv-app/ImsTelephonyService/ImsTelephonyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ImsLogger+
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/priv-app/ImsLogger+/ImsLogger+.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imsservice
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/priv-app/imsservice/imsservice.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imsmanager
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/framework/imsmanager.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
 endif
 

@@ -150,4 +150,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
     $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    $(LOCAL_PATH)/proprietary/bin/imsd:system/bin/imsd \
+    $(LOCAL_PATH)/proprietary/csc/others.xml:system/csc/others.xml \
+    $(LOCAL_PATH)/proprietary/lib/libsec-ims.so:system/lib/libsec-ims.so
+    
+PRODUCT_PACKAGES += \
+    IPsecService \
+    ImsSettings \
+    imsmanager \
+    ImsLogger+ \
+    ImsTelephonyService \
+    imsservice
+
