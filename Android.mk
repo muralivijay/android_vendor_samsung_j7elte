@@ -21,7 +21,7 @@ ifneq ($(filter j7eltexx,$(TARGET_DEVICE)),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := IPsecService
 LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := proprietary/app/IPsecService.apk/IPsecService.apk
+LOCAL_SRC_FILES := proprietary/app/IPsecService/IPsecService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
