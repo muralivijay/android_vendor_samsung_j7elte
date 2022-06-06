@@ -163,7 +163,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libcurl2.so:system/lib/libcurl2.so \
     $(LOCAL_PATH)/proprietary/lib/libevs_float.so:system/lib/libevs_float.so \
     $(LOCAL_PATH)/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
-    $(LOCAL_PATH)/proprietary/lib/libsveservice.so:system/lib/libsveservice.so
+    $(LOCAL_PATH)/proprietary/lib/libsveservice.so:system/lib/libsveservice.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
+    $(LOCAL_PATH)/proprietary/lib/libion.so:system/lib/libion.so        
 
     
 PRODUCT_PACKAGES += \
