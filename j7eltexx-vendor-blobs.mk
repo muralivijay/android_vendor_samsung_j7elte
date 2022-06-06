@@ -154,7 +154,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     $(LOCAL_PATH)/proprietary/bin/imsd:system/bin/imsd \
     $(LOCAL_PATH)/proprietary/csc/others.xml:system/csc/others.xml \
-    $(LOCAL_PATH)/proprietary/lib/libsec-ims.so:system/lib/libsec-ims.so
+    $(LOCAL_PATH)/proprietary/lib/libsec-ims.so:system/lib/libsec-ims.so \
+    $(LOCAL_PATH)/proprietary/lib/libPSI.so:system/lib/libPSI.so \
+    $(LOCAL_PATH)/proprietary/lib/libSTE.so:system/lib/libSTE.so \
+    $(LOCAL_PATH)/proprietary/lib/libSamsungAPVoiceEngine.so:system/lib/libSamsungAPVoiceEngine.so \
+    $(LOCAL_PATH)/proprietary/lib/libaresdns.so:system/lib/libaresdns.so \
+    $(LOCAL_PATH)/proprietary/lib/libcpve-client.so:system/lib/libcpve-client.so \
+    $(LOCAL_PATH)/proprietary/lib/libcurl2.so:system/lib/libcurl2.so \
+    $(LOCAL_PATH)/proprietary/lib/libevs_float.so:system/lib/libevs_float.so \
+    $(LOCAL_PATH)/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
+    $(LOCAL_PATH)/proprietary/lib/libsveservice.so:system/lib/libsveservice.so
+
     
 PRODUCT_PACKAGES += \
     IPsecService \
@@ -162,5 +172,7 @@ PRODUCT_PACKAGES += \
     imsmanager \
     ImsLogger+ \
     ImsTelephonyService \
-    imsservice
+    imsservice \
+    rcsopenapi \
+    sec_platform_library
 
